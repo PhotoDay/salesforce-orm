@@ -5,6 +5,8 @@ module SalesforceOrm
 
     DUMMY_TABLE_NAME = 'table_name'
 
+    self.abstract_class = true
+    self.legacy_connection_handling = false
     self.table_name = DUMMY_TABLE_NAME
 
     establish_connection(
